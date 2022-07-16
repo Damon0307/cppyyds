@@ -1,6 +1,6 @@
 #ifndef __HELLO_H__
 #define __HELLO_H__
-// #pragma once 编译器不支持？
+
 
 #include <string>
 #include <iostream>
