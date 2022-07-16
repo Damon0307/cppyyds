@@ -22,7 +22,7 @@ public:
     hello& operator=(const hello& h)=delete;
     ~hello();
 
-    std::string name="";
+    std::string name;
 
      void SayHello();
 

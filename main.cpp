@@ -6,8 +6,8 @@
 int main(int, char**) 
 {
 
-    hello* local_hello = new hello("WW");
-    local_hello->SayHello();
+    // hello* local_hello = new hello("WW");
+    // local_hello->SayHello();
 
     std::cout << "Hello, world!\n";
 }
