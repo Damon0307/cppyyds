@@ -67,3 +67,4 @@ auto thread_func=[](){
     i.join();
   }
   cout<<" OVER "<<endl;
+  终于可以
