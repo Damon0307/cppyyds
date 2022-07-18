@@ -10,11 +10,10 @@
 #include <thread>
 #include <atomic> // 原子变量 王炸！
 #include <future> //async 都在这里里面哦 正经人 谁玩thread
-#include "TutorialConfig.h"
-#include "hello.h"
+
 #include "RunBase.h"
-#include "Third/Third.h"
-#include "UTIL/Util.h"
+#include "ThirdLib/Third.h"
+#include "UTIL/Util.hpp"
 #include "LearnNote/LAuto.h"
 #include "LearnNote/ThreadProduce.hpp"
 #include "LearnNote/ThreadConsume.hpp"

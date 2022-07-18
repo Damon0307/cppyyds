@@ -5,22 +5,23 @@
 #include <string>
 #include <iostream>
  
+ using namespace std;
 
-class hello
+class Hello
 {
 private:
   
 public:
-    hello(const std::string& name);
+    Hello(const std::string& name);
     //重载默认的拷贝构造函数
-    hello(const hello& h)
+    Hello(const Hello& h)
     {
         std::cout<<"小伙子基本功不错啊"<<std::endl;
         this->name=h.name;
     }
     //赋值构造函数
-    hello& operator=(const hello& h)=delete;
-    ~hello();
+    Hello& operator=(const Hello& h)=delete;
+    ~Hello();
 
     std::string name="";
 
@@ -28,5 +29,15 @@ public:
 
 };
 
+Hello::Hello(const std::string& name)
+{
+     this->name=name;
+}
 
-#endif
+void Hello::SayHello()
+{
+    cout<<this->name<<" say hi to you"<<endl;
+}
+
+
+#endif // __HELLO_H__

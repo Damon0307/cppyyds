@@ -1,0 +1,21 @@
+// #include "Hello.h"
+
+// using namespace std;
+
+// Hello::Hello(const std::string& name)
+// {
+//     cout<<" hi "<<name<<endl;
+//     this->name=name;
+// }
+ 
+// Hello::~Hello()
+// {
+//     std::cout<<" hello  disconstruct "<<std::endl;
+// }
+
+// void Hello::SayHello()
+// {
+//      cout<<name<<" say hello to u"<<endl;
+// }
+
+ 

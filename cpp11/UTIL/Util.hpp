@@ -1,5 +1,6 @@
-#pragma once
-
+#ifndef __UTIL_H__
+#define __UTIL_H__
+ 
 #include <iostream>
 #include <memory>
 #include <functional>
@@ -22,3 +23,19 @@ public:
 };
 
 
+Util::Util(/* args */)
+{
+}
+
+
+Util::~Util()
+{
+}
+
+string Util::Util_GetTopInfo()
+{
+     return "This is an res from UTIL";
+}
+ 
+
+#endif // __UTIL_H__
