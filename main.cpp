@@ -12,6 +12,7 @@ using namespace std;
 int main(int, char**) 
 {
 
+<<<<<<< HEAD
     // Hello* local_hello = new Hello("WW");
     // local_hello->SayHello();
 
@@ -24,6 +25,10 @@ int main(int, char**)
 
     TestForMe ta;
     ta.ImplInAnotherFile();
+=======
+    // hello* local_hello = new hello("WW");
+    // local_hello->SayHello();
+>>>>>>> f71f7b9a35d280340c74fd76f42f61c0b2929dc1
 
     std::cout << "Hello, world!\n";
 }
