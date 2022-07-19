@@ -5,7 +5,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 # include directories
  
-message("工程文件目录 "${PROJECT_SOURCE_DIR})
+message("工程文件目录 " ${PROJECT_SOURCE_DIR})
 message("工程可执行文件目录 " ${PROJECT_BINARY_DIR})
 
 add_subdirectory("cpp11")
@@ -23,13 +23,25 @@ LINK_DIRECTORIES(${PROJECT_BINARY_DIR}/cpp11)
 #SET(LIBRARY_OUTPUT_PATH ${PROJECT_BINARY_DIR}/lib)
 
 ##内部编译 外部编译， 外部编译就是自己建立一个build 文件在
+ 
+file(GLOB_RECURSE cpp11_headers ${PROJECT_SOURCE_DIR}/cpp11/*.h)
+
+message("FILES  HEADER -> " ${cpp11_headers})
+
+message("工程文件目录----------- " ${PROJECT_SOURCE_DIR})
+
+file(GLOB_RECURSE cpp11_impls ${PROJECT_SOURCE_DIR}/cpp11/*.cpp)
+# file(GLOB_RECURSE cpp11_impls ${PROJECT_SOURCE_DIR}  *.cpp *.hpp) 重复定义main? fuck
+
+message("FILES IMPL-> " ${cpp11_impls})
+ 
 
 
 include(CTest)
 enable_testing()
 
 #只有一个main.cpp 是自己编写， 其他的全部以库文件的形式发布，虽然我自己一直看得到源文件哈哈哈
-add_executable(CPPYYDS main.cpp )
+add_executable(CPPYYDS main.cpp ${cpp11_impls} )
 
 target_link_libraries(CPPYYDS -lcpp11_box)
 

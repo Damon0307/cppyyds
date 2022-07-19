@@ -1,7 +1,10 @@
+#ifndef __LRUNTIME_H__
+#define __LRUNTIME_H__
 
-#pragma once
 
-#include "../UTIL/Util.hpp"
+
+
+#include "../UTIL/UTIL.h"
 #include "../RunBase.h"
 
 using namespace std;
@@ -40,3 +43,5 @@ public:
 
  
 
+
+#endif // __LRUNTIME_H__

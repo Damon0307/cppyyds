@@ -1,3 +1,6 @@
+#ifndef __W_VECTOR_H__
+#define __W_VECTOR_H__
+
 #include <iostream>
 #include <vector>
 #include <string>
@@ -27,15 +30,4 @@ public:
 // {
 // }
 
-W_Vector::~W_Vector()
-{
-}
-
-void W_Vector::TraverseTheVector()
-{
-    cout<<"hello  "<<mstr<<endl;
-    for(auto i : mvector)
-    {
-        cout<<" u have "<<i<<" in  the vector "<<endl;
-    }
-}
+#endif // __W_VECTOR_H__

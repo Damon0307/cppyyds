@@ -1,5 +1,8 @@
-#pragma once
-#include "../UTIL/Util.hpp"
+#ifndef __THREADPRODUCE_H__
+#define __THREADPRODUCE_H__
+
+
+#include "../UTIL/UTIL.h"
 #include <chrono>
 #include <thread>
 #include <mutex>            //作用不是同步而是 保护临界区
@@ -61,3 +64,5 @@ ThreadProduce::ThreadProduce(/* args */)
 ThreadProduce::~ThreadProduce()
 {
 }
+
+#endif // __THREADPRODUCE_H__

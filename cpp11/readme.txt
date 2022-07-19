@@ -41,7 +41,7 @@ std::atomic_flag  ato_zhamen=ATOMIC_FLAG_INIT;   //
 
 atomic_int money(3); //原子变量 钱！
  
-int main (int argc, char *argv[])
+int aa (int argc, char *argv[])
 {
  
 auto thread_func=[](){

@@ -13,13 +13,13 @@
 
 #include "RunBase.h"
 #include "ThirdLib/Third.h"
-#include "UTIL/Util.hpp"
+#include "UTIL/UTIL.h"
 #include "LearnNote/LAuto.h"
 #include "LearnNote/ThreadProduce.hpp"
 #include "LearnNote/ThreadConsume.hpp"
 #include "LearnNote/LRunTime.h"
-#include "STL/W_Vector.hpp"
-#include "STL/FunctionAndBind.hpp"
+#include "STL/W_Vector.h"
+#include "STL/FunctionAndBind.h"
 
 
 using namespace std;
@@ -43,8 +43,8 @@ void CallWhenBig(int a, int b, std::function<int(int, int)> the_func)
     cout << "小的数我自己来 " << a + b << endl;
   }
 }
-
-int main_of_github()
+# if 0
+int A_github()
 {
 #if 0
   std::shared_ptr<hello> hellp_ptr = std::make_shared<hello>("JIACHENG");
@@ -192,4 +192,7 @@ val.f irst 或val.second 来提取键值。
  th_produce.join();
  th_consume_1.join();
  th_consume_2.join();
+#endif
+
+
 #endif

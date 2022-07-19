@@ -1,5 +1,6 @@
 #ifndef __UTIL_H__
 #define __UTIL_H__
+
  
 #include <iostream>
 #include <memory>
@@ -18,24 +19,13 @@ private:
     /* data */
 public:
     Util(/* args */);
-    string Util_GetTopInfo();
+    string Util_GetTopInfo()
+    {
+           return "This is an res from UTIL";
+    }
     ~Util();
 };
 
 
-Util::Util(/* args */)
-{
-}
-
-
-Util::~Util()
-{
-}
-
-string Util::Util_GetTopInfo()
-{
-     return "This is an res from UTIL";
-}
  
-
-#endif // __UTIL_H__
+ #endif // __UTIL_H__

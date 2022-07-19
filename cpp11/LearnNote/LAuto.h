@@ -1,4 +1,7 @@
-#pragma once
+#ifndef __LAUTO_H__
+#define __LAUTO_H__
+
+
 #include "../RunBase.h"
 class LAuto : public RunBase
 {
@@ -17,3 +20,4 @@ public:
     void RunTest()override;
 };
  
+ #endif // __LAUTO_H__

@@ -1,6 +1,8 @@
-#pragma once 
+#ifndef __THREADCONSUME_H__
+#define __THREADCONSUME_H__
 
-#include "../UTIL/Util.hpp"
+
+#include "../UTIL/UTIL.h"
 #include <thread>
 #include <mutex>
 #include <chrono>
@@ -75,3 +77,5 @@ ThreadConsume::~ThreadConsume()
 {
        cout<< "ThreadConsume destory" <<endl; 
 }
+
+#endif // __THREADCONSUME_H__

@@ -1,6 +1,6 @@
-#ifndef TESTFORME_HPP
-#define TESTFORME_HPP
-
+#ifndef __TESTFORME_H__
+#define __TESTFORME_H__
+ 
 #include <iostream>
 #include <string>
 using namespace std;
@@ -14,18 +14,5 @@ public:
     void ImplInAnotherFile();
     ~TestForMe();
 };
-
-TestForMe::TestForMe(/* args */)
-{
-    cout<<" Test For Me "<<endl;
-}
-
-
-
-TestForMe::~TestForMe()
-{
-}
-
-
-
-#endif // TESTFORME_HPP
+ 
+ #endif // __TESTFORME_H__

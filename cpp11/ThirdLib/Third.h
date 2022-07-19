@@ -1,6 +1,9 @@
-#pragma once
+#ifndef __THIRD_H__
+#define __THIRD_H__
 
-#include  "../UTIL/Util.hpp"
+
+
+#include  "../UTIL/UTIL.h"
 
 class Third
 {
@@ -26,3 +29,5 @@ public:
     ~Third();
 };
 
+
+#endif // __THIRD_H__
