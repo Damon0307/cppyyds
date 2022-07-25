@@ -12,6 +12,7 @@ add_subdirectory("cpp11")
 INCLUDE_DIRECTORIES(${PROJECT_SOURCE_DIR}/cpp11)
 INCLUDE_DIRECTORIES(${PROJECT_SOURCE_DIR}/cpp11/LOG/)
 LINK_DIRECTORIES(${PROJECT_BINARY_DIR}/cpp11)
+LINK_DIRECTORIES(${PROJECT_BINARY_DIR}/cpp11/ThirdLib)
 
 
 #LINK_DIRECTORIES()
@@ -45,6 +46,8 @@ enable_testing()
 #上面已经用源文件形式提供了 就不需要再连接库了，下面的这种是按照链接库文件形式生成可执行文件
 add_executable(CPPYYDS main.cpp)
 target_link_libraries(CPPYYDS -lcpp11_box)
+target_link_libraries(CPPYYDS  spdlogd)
+
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})

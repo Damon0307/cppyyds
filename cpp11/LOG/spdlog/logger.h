@@ -149,6 +149,7 @@ public:
     template<typename... Args>
     void debug(format_string_t<Args...> fmt, Args &&... args)
     {
+       // cout<<"debug threadid "<<this_thread::get_id()<<endl;
         log(level::debug, fmt, std::forward<Args>(args)...);
     }
 
